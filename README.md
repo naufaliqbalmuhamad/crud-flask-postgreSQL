@@ -20,13 +20,12 @@ Sebelumnya, kerjakan terlebih dahulu langkah-langkah berikut:
    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:KadaL123@localhost:5432/Twitter'
    ```
 6. Pada case ini, kita menggunakan SQLAlchemy sebagai tools untuk menghubungan Python dengan database PostgreSQL. Untuk dapat menggunakannya, deklarasikan ketiganya dalam suatu variabel baru.
+
    ```
    db = SQLAlchemy(app)
    ```
 
    Variabel `db` tersebut akan digunakan pada kode-kode selanjutnya untuk melakukan CRUD ke database.
-
-
 
 
 
