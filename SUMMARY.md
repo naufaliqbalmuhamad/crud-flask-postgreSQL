@@ -1,5 +1,5 @@
 # Summary
 
 * [Menghubungkan Flask dengan database PostgreSQL](README.md)
-* [First Chapter](chapter1.md)
+* [Membuat Tabel di Database PostgreSQL dengan Flask](chapter1.md)
 
