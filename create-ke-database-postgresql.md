@@ -1,4 +1,4 @@
-# Create ke Database PostgreSQL
+# Create
 
 Sebelum memasukkan data ke database PostgreSQL, kita perlu membuat endpoint yang spesifik untuk mengolah proses pemasukan data tersebut. Pembuatan endpoint dapat dilihat pada materi routing.
 
@@ -49,7 +49,7 @@ db_data = User(
 )
 ```
 
-Saat variabel data sudah dibuat, langkah berikutnya adalah dengan membuat session di database melalui SQLAlchemy. Session merepresentasikan koneksi antara aplikasi \(SQLAlchemy\) dan database \(PostgreSQL\) yang menyimpan object tetapnya. 
+Saat variabel data sudah dibuat, langkah berikutnya adalah dengan membuat session di database melalui SQLAlchemy. Session merepresentasikan koneksi antara aplikasi \(SQLAlchemy\) dan database \(PostgreSQL\) yang menyimpan object tetapnya.
 
 Pada session kali ini, kita ingin membuat koneksi antara PostgreSQL dengan SQLAlchemy dengan membawa variabel yang berisi data request.
 
