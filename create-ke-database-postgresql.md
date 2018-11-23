@@ -38,11 +38,11 @@ role = request_data['role']
 token = request_data['token']
 ```
 
-Setelah itu, kita membuat variabel baru yang berisi data-data yang akan dimasukkan ke dalam database. Variabel baru ini mengacu kepada \_class \_saat membuat tabel. Misalnya, data yang dimasukkan ke dalam database adalah data user dengan mengacu kepada _class _`User`.
+Setelah itu, kita membuat variabel baru yang berisi data-data yang akan dimasukkan ke dalam database. Variabel baru ini mengacu kepada _class_ saat membuat tabel. Misalnya, data yang dimasukkan ke dalam database adalah data user dengan mengacu kepada _class _`User`.
 
 ```
 db_data = User(
-    
+
 )
 ```
 
