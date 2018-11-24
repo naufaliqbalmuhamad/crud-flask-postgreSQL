@@ -44,11 +44,11 @@ def delete():
     if request.method == 'DELETE':
         request_data = request.get_json()
         request_email = request_data['email']
-        
+
         dataDB = User.query.filter_by(email=request_email).first()
         db.session.delete(dataDB)
         db.session.commit()           
-      
+
         return 'success', 200
 ```
 
