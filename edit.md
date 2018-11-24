@@ -24,7 +24,7 @@ request = {
 }
 ```
 
-_Class _yang didefinisikan di dalam file Python:
+_Class_ yang didefinisikan di dalam file Python:
 
 ```py
 class User(db.Model):
@@ -33,7 +33,6 @@ class User(db.Model):
     password = db.Column(db.String())
     role = db.Column(db.String())
     token = db.Column(db.String())
-
 ```
 
 Contoh tabel yang terdapat di database:
