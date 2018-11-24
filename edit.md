@@ -20,7 +20,8 @@ Data yang masuk:
 
 ```py
 request = {
-    "email": "makers_institute@gmail.com"
+    "email": "makers_institute@gmail.com",
+    "new_email": "payung_seduh@gmail.com"
 }
 ```
 
@@ -50,7 +51,18 @@ userDB = User.query.filter_by(email=request_data).first()
 
 #### 2. Edit
 
+Editing data di database menggunakan SQLAlchemy cukup dengan mengganti object dari hasil query dengan nilai yang ingin kita masukkan. Setelah itu, commit session SQLAlchemy tanpa perlu menambah session kembali.
 
+```py
+userDB.email = request_data['new_email']
+db.session.commit()
+```
+
+Tabel di dalam database akan berubah menjadi:
+
+| id | email | password | role | token |
+| :--- | :--- | :--- | :--- | :--- |
+| 1 | payung\_seduh@gmail.com | 1234 | Manager | hjakjHAB8787ah.aiAGYUUkij111kuhKUi |
 
 
 
